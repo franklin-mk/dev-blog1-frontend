@@ -32,7 +32,7 @@ const handleLogout=async()=>{
         {user &&<h3 className="text-white text-sm hover:text-gray-500 cursor-pointer"><Link to="/write">Write</Link></h3>}
         {user && <h3 className="text-white text-sm hover:text-gray-500 cursor-pointer"><Link to={"/myblogs/"+user._id}>My blogs</Link></h3>}
         {user && <h3 onClick={handleLogout} className="text-white text-sm hover:text-gray-500 cursor-pointer">Logout</h3>}
-        { user && <h3 className="text-white text-sm hover:text-gray-500 cursor-pointer"><Link to="/aichat">AI Chat</Link></h3> }
+        { user && <h3 className="text-white text-sm hover:text-gray-500 cursor-pointer"><Link to="/aichat">AI Chat Assistant</Link></h3> }
 
 
 
