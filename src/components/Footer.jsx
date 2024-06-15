@@ -1,19 +1,26 @@
 //COMPLETED
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
-      <>
-  <div className="mt-8 w-full bg-black px-8 md:px-[300px] flex md:flex-row flex-col space-y-6 md:space-y-0 items-start md:justify-between text-sm md:text-md py-8 ">
+      < >
+  <div className="sticky mb-0 mt-8 w-full bg-black px-8 md:px-[300px] flex md:flex-row flex-col space-y-6 md:space-y-0 items-start md:justify-between text-sm md:text-md py-8 ">
          <div className="flex flex-col text-white">
-           <p>Featured Blogs</p>
-           <p>Most viewed</p>
-           <p>Readers Choice</p>
+           <p>Developers Info:</p>
+           <p>June B</p>
+           <p>Franklin M</p>
+           <p>Kevin K</p>
+           <p>Vincent K</p>
+           <p>Jenelica G</p>
          </div>
   
          <div className="flex flex-col text-white">
-           <p>Forum</p>
-           <p>Support</p>
-           <p>Recent Posts</p>
+           <p>Support Contacts:</p>
+           <p>(+254) 0712345</p>
+           <p>(+254) 0798765</p>
+           <br />
+           <p> <Link to="/aichat">AI Chat & Support</Link></p>
+
          </div>
   
          <div className="flex flex-col text-white">
@@ -22,12 +29,8 @@ const Footer = () => {
            <p>Terms & Conditions</p>
            <p>Terms of Service</p>
          </div>
-         {/* add the chatbot here */}
-         <div className="flex flex-col text-white">
-           <p>Chat with our AI Assistant</p>
-         </div>
       </div>
-      <p className="py-2 pb-6 text-center text-white bg-black text-sm">All rights reserved @DEV HUB 2024</p>
+      <p className="mb-0 bottom-0 py-2 pb-6 text-center text-white bg-slate-900 text-sm">All rights reserved @DEV HUB 2024</p>
       </>
       
     )

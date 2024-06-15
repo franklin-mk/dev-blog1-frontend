@@ -9,6 +9,7 @@ import PostDetails from './pages/P2stDetails'
 import Profile from './pages/Profile'
 import {  UserContextProvider } from './context/UserContext'
 import MyBlogs from './pages/MyBlogs'
+import AIchat from "./pages/AIchat"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/edit/:id" element={<EditPost/>}/>
           <Route exact path="/profile/:id" element={<Profile/>}/>
           <Route exact path="/myblogs/:id" element={<MyBlogs/>}/>
+          <Route exact path="/aichat" element={<AIchat/>}/>
         </Routes>
     </UserContextProvider>
   )
