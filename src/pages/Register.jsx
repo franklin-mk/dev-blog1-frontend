@@ -2,10 +2,11 @@ import { Link, useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
 import { useState } from "react"
 import axios from 'axios'
-import {URL} from '../url'
+//import {URL} from '../url'
 
 
 const Register = () => {
+  const URL = "https://dev-blog1-backend.vercel.app"
 
   const [username,setUsername]=useState("")
   const [email,setEmail]=useState("")
