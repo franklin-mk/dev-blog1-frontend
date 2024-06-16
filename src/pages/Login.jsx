@@ -3,10 +3,11 @@ import { Link, useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
 import { useContext, useState } from "react"
 import axios from "axios"
-import { URL } from "../url"
+//import { URL } from "../url"
 import { UserContext } from "../context/UserContext"
 
 const Login = () => {
+  const URL = "https://dev-blog1-backend.vercel.app"
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const [error,setError]=useState(false)
