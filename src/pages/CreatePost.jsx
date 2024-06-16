@@ -4,12 +4,12 @@ import Footer from '../components/Footer'
 import {ImCross} from 'react-icons/im'
 import { useContext, useState } from 'react'
 import { UserContext } from '../context/UserContext'
-//import { URL } from '../url'
+import { URL } from '../url'
 import axios from 'axios'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 const CreatePost = () => {
-   const URL = "https://dev-blog1-backend.vercel.app"
+   // const URL = "https://dev-blog1-backend.vercel.app"
     const [title,setTitle]=useState("")
     const [desc,setDesc]=useState("")
     const [file,setFile]=useState(null)
