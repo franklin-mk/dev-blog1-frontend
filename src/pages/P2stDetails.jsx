@@ -82,6 +82,7 @@ const PostDetails = () => {
       // fetchPostComments()
       // setComment("")
       window.location.reload(true)
+        alert("button clicked")
 
     }
     catch(err){
