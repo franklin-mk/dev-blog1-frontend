@@ -74,6 +74,7 @@ const PostDetails = () => {
 
   const postComment=async(e)=>{
     e.preventDefault()
+    alert("button clicked")
     try{
       const res=await axios.post(URL+"/api/comments/create",
       {comment:comment, author:user.username, postId:postId, userId:user._id},
@@ -82,7 +83,7 @@ const PostDetails = () => {
       // fetchPostComments()
       // setComment("")
       window.location.reload(true)
-        alert("button clicked")
+        
 
     }
     catch(err){
