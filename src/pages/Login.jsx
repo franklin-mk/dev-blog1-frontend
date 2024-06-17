@@ -7,7 +7,6 @@ import { URL } from "../url"
 import { UserContext } from "../context/UserContext"
 
 const Login = () => {
-  // const URL = "https://dev-blog1-backend.vercel.app"
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const [error,setError]=useState(false)
@@ -36,7 +35,7 @@ const Login = () => {
   return (
     <>
     <div className="flex items-center justify-between px-6 md:px-[200px] py-4">
-        <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">Blog Market</Link></h1>
+        <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">Blog HUB</Link></h1>
         <h3><Link to="/register">Register</Link></h3>
     </div>
     <div className="w-full flex justify-center items-center h-[80vh] ">
