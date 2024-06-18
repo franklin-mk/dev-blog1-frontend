@@ -69,12 +69,10 @@ const PostDetails = () => {
 
   useEffect(()=>{
     fetchPostComments()
-
-  },[postId])
+  },[postId, comment])
 
   const postComment=async(e)=>{
     e.preventDefault()
-    //alert("button clicked")
     try{
       const res=await axios.post(URL+"/api/comments/create",
       {comment:comment, author:user.username, postId:postId, userId:user._id},
