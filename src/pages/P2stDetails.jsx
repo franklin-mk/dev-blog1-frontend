@@ -81,8 +81,8 @@ const PostDetails = () => {
       {withCredentials:true})
       
       // fetchPostComments()
-      // setComment("")
-      window.location.reload(true)
+      setComment("")
+      //window.location.reload(true)
     }
     catch(err){
          console.log(err)
