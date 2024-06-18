@@ -9,7 +9,6 @@ import axios from 'axios'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 const CreatePost = () => {
-   // const URL = "https://dev-blog1-backend.vercel.app"
     const [title,setTitle]=useState("")
     const [desc,setDesc]=useState("")
     const [file,setFile]=useState(null)
