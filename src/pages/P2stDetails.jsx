@@ -48,9 +48,9 @@ const PostDetails = () => {
 
   }
 
-  useEffect(()=>{
+/*   useEffect(()=>{
     fetchPost()
-  },[postId])
+  },[postId]) */
 
   const fetchPostComments=async()=>{
     setLoader(true)
