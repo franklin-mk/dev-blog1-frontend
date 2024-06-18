@@ -50,7 +50,6 @@ const PostDetails = () => {
 
   useEffect(()=>{
     fetchPost()
-
   },[postId])
 
   const fetchPostComments=async()=>{
@@ -69,6 +68,7 @@ const PostDetails = () => {
 
   useEffect(()=>{
     fetchPostComments()
+    fetchPost()
   },[postId])
 
   const postComment=async(e)=>{
@@ -77,9 +77,9 @@ const PostDetails = () => {
       const res=await axios.post(URL+"/api/comments/create",
       {comment:comment, author:user.username, postId:postId, userId:user._id},
       {withCredentials:true})
-      navigate("/posts/post/"+res.data._id)
-      // fetchPostComments()
+      fetchPostComments()
       setComment("")
+      //navigate("/posts/post/"+res.data._id)
       //window.location.reload(true)
     }
     catch(err){
